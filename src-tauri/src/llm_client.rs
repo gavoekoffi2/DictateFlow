@@ -55,13 +55,13 @@ fn build_headers(provider: &PostProcessProvider, api_key: &str) -> Result<Header
     headers.insert(CONTENT_TYPE, HeaderValue::from_static("application/json"));
     headers.insert(
         REFERER,
-        HeaderValue::from_static("https://github.com/cjpais/VocalWrite"),
+        HeaderValue::from_static("https://github.com/cjpais/Vocrit AI"),
     );
     headers.insert(
         USER_AGENT,
-        HeaderValue::from_static("VocalWrite/1.0 (+https://github.com/cjpais/VocalWrite)"),
+        HeaderValue::from_static("Vocrit AI/1.0 (+https://github.com/cjpais/Vocrit AI)"),
     );
-    headers.insert("X-Title", HeaderValue::from_static("VocalWrite"));
+    headers.insert("X-Title", HeaderValue::from_static("Vocrit AI"));
 
     // Provider-specific auth headers
     if !api_key.is_empty() {
