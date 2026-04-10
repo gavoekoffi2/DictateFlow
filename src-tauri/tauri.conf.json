@@ -74,10 +74,10 @@
   "plugins": {
     "updater": {
       "active": false,
-      
       "endpoints": [
-        "https://github.com/cjpais/VocalWrite/releases/latest/download/latest.json"
-      ]
+        "https://github.com/gavoekoffi2/Vocrit-AI/releases/latest/download/latest.json"
+      ],
+      "pubkey": ""
     }
   }
 }
