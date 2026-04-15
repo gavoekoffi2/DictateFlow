@@ -27,7 +27,7 @@
   },
   "bundle": {
     "active": true,
-    "createUpdaterArtifacts": true,
+    "createUpdaterArtifacts": false,
     "targets": [
       "nsis"
     ],
@@ -71,13 +71,5 @@
       }
     }
   },
-  "plugins": {
-    "updater": {
-      "active": false,
-      "endpoints": [
-        "https://github.com/gavoekoffi2/Vocrit-AI/releases/latest/download/latest.json"
-      ],
-      "pubkey": ""
-    }
-  }
+  "plugins": {}
 }
