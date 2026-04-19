@@ -18,11 +18,7 @@ jobs:
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@stable
       - name: Install Vulkan SDK
-        run: |
-          choco install vulkan-sdk -y
-          $vulkanPath = (Get-ChildItem -Path "C:\VulkanSDK" -Directory | Select-Object -First 1).FullName
-          echo "VULKAN_SDK=$vulkanPath" >> $env:GITHUB_ENV
-          echo "$vulkanPath\Bin" >> $env:GITHUB_PATH
+        uses: humbletim/install-vulkan-sdk@v1.2
       - name: Install dependencies (bun)
         uses: oven-sh/setup-bun@v1
       - name: Install Packaging Tools
